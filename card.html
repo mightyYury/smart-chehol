@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SMART-Чехол</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/tabs.js"></script>
+</head>
+<body class="_full">
+<header class="header clearfix _full">
+    <div class="top-menu _gray">
+        <div class="wrap">
+            <div class="top-menu__city">
+                <select name="city" id="city">
+                    <option value="Ростов-на-Дону">Ростов-на-дону</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Владимир">Владимир</option>
+                    <option value="Воронеж">Воронеж</option>
+                </select>
+            </div>
+            <ul class="top-menu__nav _flex-around">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Обмен и возврат</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Оптовым клиентам</a></li>
+                <li><a href="#">Подарочная карта</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="header__logo"><a href="../smartchehol/index.html"><img src="img/logo.png" alt=""></a></div>
+        <div class="header__info">
+            <div class="header__phones _inline _mt25">
+                <p>+7 (495) 151-82-48</p>
+                <p>+7 (495) 151-67-42</p>
+            </div>
+            <div class="header__callback _inline _mt25">
+                <button class="callback-btn _green">Заказать звонок</button>
+                <p>ежедневно с 9:00-21:00</p>
+            </div>
+            <div class="header__search _inline">
+                <input type="search" placeholder="Поиск по каталогу">
+                <div class="header__search-btn">
+                    <label for="header-search"></label>
+                    <input type="submit" name="" id="header-search">
+                </div>
+            </div>
+            <div class="header__basket _inline">
+                <a class="header__basket-procent" href="#"></a>
+                <a class="header__basket-like" href="#"></a>
+                <a class="header__basket-goods" href="#"></a>
+                <div class="header__basket-number">2</div>
+                <p>товар на 12 850 Р</p>
+            </div>
+        </div>
+        <div class="main-menu">
+            <ul class="main-menu__nav _flex-around _uppercase">
+                <li><a href="#">Чехлы для диванов</a></li>
+                <li><a href="#">Чехлы для кресел</a></li>
+                <li><a href="#">Чехлы для стульев</a></li>
+                <li><a href="#">Комплекты чехлов</a></li>
+                <li><a href="#">Товары для дома</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="item wrap">
+    <div class="wrap">
+        <div class="breadcrumbs">
+            <ul>
+                <li><a href="#">Главная страница</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Чехлы для стульев</a></li>
+            </ul>
+        </div>
+        <div class="item__info">
+            <div class="item__images">
+                <div class="item_images-thumbs">
+                    <ul class="image-tabs">
+                        <li class="active"><img src="img/image-thumb.png" alt=""></li>
+                        <li><img src="img/image-thumb.png" alt=""></li>
+                        <li><img src="img/image-thumb.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="item__image displayed">
+                    <img src="img/image.png" alt="">
+                </div>
+                <div class="item__image">
+                    <img src="img/image.png" alt="">
+                </div>
+                <div class="item__image">
+                    <img src="img/image.png" alt="">
+                </div>
+            </div>
+            <div class="item__options">
+                <div class="item__title">Микрофибра Кофейный</div>
+                <p>Чехол на 3-х местный диван</p>
+                <div class="price">
+                    <div class="price-old">5 000 Р</div>
+                    3 500Р
+                </div>
+                <div class="item__chars">
+                    <div class="item__material">
+                        Материал: <select name="material" id="material">
+                        <option value="">Микрофибра</option>
+                        <option value="">Микрофибра</option>
+                        <option value="">Микрофибра</option>
+                    </select>
+                    </div>
+                    <div class="item__main-material">
+                        Основание: <select name="main-material" id="main-material">
+                        <option value="">Дерево</option>
+                        <option value="">Дерево</option>
+                        <option value="">Дерево</option>
+                    </select>
+                    </div>
+                    <div class="item__buy">
+                        <button class="to-cart _green _pointer">В корзину</button>
+                        <button class="one-click _pointer">Купить в 1 клик</button>
+                        <a href="#">В избранное</a>
+                    </div>
+                </div>
+                <div class="item__delivery">
+                    <p><b>Доставка</b> по Москве - 500Р, 1-2 дня</p>
+                </div>
+                <div class="item__specials">
+                    <h3>Особенности</h3>
+                    <ul class="_right25">
+                        <li><img src="img/icons/color.png" alt="">Разнообразные расцветки</li>
+                        <li><img src="img/icons/expand.png" alt="">Высокая растяжимость</li>
+                        <li><img src="img/icons/laundry.png" alt="">Подлежит многократной стирке</li>
+                        <li><img src="img/icons/paw.png" alt="">Защита от животных</li>
+                    </ul>
+                    <ul>
+                        <li><img src="img/icons/shield.png" alt="">Прочность и надежность</li>
+                        <li><img src="img/icons/cloud.png" alt="">Мягкая ткань</li>
+                        <li><img src="img/icons/raindrop.png" alt="">Влагостойкое покрытие</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="item__tabs">
+            <div class="item__tabs-nav">
+                <ul class="tabs">
+                    <li class="active">Характеристики и описание</li>
+                    <li>Отзывы <span>25</span></li>
+                    <li>Вопросы <span>13/13</span></li>
+                    <li>Доставка</li>
+                </ul>
+            </div>
+            <div class="item__tabs-items">
+                <div class="item__tab-item">
+                    <div class="item__tab-table">
+                        <table>
+                            <tr>
+                                <td class="table-dots">Стиль</td>
+                                <td>классика / винтаж / фьюжн / универсальный</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Коллекция</td>
+                                <td>Виста</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Тип</td>
+                                <td>Диваны</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Состав</td>
+                                <td>50% хлопок, 50% полиэстер</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Растяжимость чехла по спинке (без учета подлокотников)</td>
+                                <td>от 160 до 240 сантиметров</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Стирка</td>
+                                <td>Машинная, рекомендуемая температура<br/>- 30 градусов, максимальная - 40</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Упаковка</td>
+                                <td>Виниловая сумка с ручкой на молнии</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dots">Инструкция</td>
+                                <td>В комплекте с чехлом есть подробная инструкция</td>
+                            </tr>
+                        </table>
+                        <div class="item__sertificate">
+                            <h3>Сертификаты</h3>
+                            <img class="_inline" src="img/sert.png" alt="">
+                            <img class="_inline" src="img/sert.png" alt="">
+                            <img class="_inline" src="img/sert.png" alt="">
+                        </div>
+                    </div>
+                    <div class="item__description">
+                        <p>Чехол  идеально подойдет для тех, кто хочет защитить свою мебель от постоянных воздействий.
+                            Этот еврочехол, благодаря прочности ткани, станет идеальным решением проблемы для владельцев
+                            домашних животных. Кроме того, состав ткани гипоаллергенен, а потому безопасен для малышей или
+                            людей пожилого возраста. Отлично вписывается в интерьер любого стиля: от классических минимализма
+                            и модерна до экстравагантных этно- или техно-стилей. Еврочехол для мягкой мебели  послужит не только
+                            практичной защитой для Вашей мебели, но и приятно удивит Вас мягкостью ткани и итальянским качеством
+                            производства.</p>
+
+                        <p>Гостиная, детская, кухня, прихожая или спальня – измените легко любую комнату в доме с «Вистой»!
+                            Добавьте красок!</p>
+                    </div>
+                    <div class="item__size">
+                        <div class="item__size-form">
+                            <h3>Изготовим под индивидуальный размер</h3>
+                            <form action="url">
+                                <div class="item__form-input">
+                                    <label for="item-width">Ширина (см)*</label>
+                                    <input id="item-width" type="text">
+                                </div>
+                                <div class="item__form-input">
+                                    <label for="item-height">Длина (см)*</label>
+                                    <input id="item-height" type="text">
+                                </div>
+                                <div class="item__form-input">
+                                    <label for="name">Ваше имя*</label>
+                                    <input id="name" type="text">
+                                </div>
+                                <div class="item__form-input">
+                                    <label for="phone">Ваш телефон*</label>
+                                    <input id="phone" type="text">
+                                </div>
+                                <div class="item__form-input">
+                                    <input class="_green" type="submit" value="Заказать">
+                                    <p>Нажимая кнопку "Заказать", я подтверждаю свою дееспособность,
+                                        даю согласие на обработку моих персональных данных в соответствии с условиями</p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="item__size-info">
+                            <h3>Как правильно измерить диван</h3>
+                            <p>Чтобы правильно подобрать размер чехла, достаточно измерить
+                                длину спинки вашего дивана, как показано на схеме. Соотнесите
+                                длину спинки вашего дивана с параметрами растяжимости чехла.
+                            </p>
+                            <div class="item__size-schema">
+                                <p>от 230 до 310 см.</p>
+                                <div class="arrows"></div>
+                                <div class="sofa"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__same">
+                        <h3>Этот чехол подойдет</h3>
+                        <div class="item__same-items _flex-around">
+                        <div class="item__same-item _border">
+                            <img src="img/divan.png" alt="">
+                            <div><a href="../smartchehol/card.html">Виста Меандр серый</a></div>
+                            <p>Чехол для подушки</p>
+                            <div class="price">12 800 Р</div>
+                        </div>
+                        <div class="item__same-item _border">
+                            <img src="img/divan.png" alt="">
+                            <div><a href="../smartchehol/card.html">Виста Меандр серый</a></div>
+                            <p>Чехол для подушки</p>
+                            <div class="price">12 800 Р</div>
+                        </div>
+                        <div class="item__same-item _border">
+                            <img src="img/divan.png" alt="">
+                            <div><a href="../smartchehol/card.html">Виста Меандр серый</a></div>
+                            <p>Чехол для подушки</p>
+                            <div class="price">12 800 Р</div>
+                        </div>
+                        <div class="item__same-item _border">
+                            <img src="img/divan.png" alt="">
+                            <div><a href="../smartchehol/card.html">Виста Меандр серый</a></div>
+                            <p>Чехол для подушки</p>
+                            <div class="price">12 800 Р</div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item__tab-item">Нет отзывов</div>
+                <div class="item__tab-item">Нет вопросов</div>
+                <div class="item__tab-item">Доставка</div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer clearfix _full">
+    <div class="wrap _flex-between">
+        <div class="footer__column">
+            <div class="footer__logo"><a href="../smartchehol/index.html"><img src="img/footer-logo.jpg" alt=""></a></div>
+            <div class="footer__copyright">
+                <p>© 2017 Смартчехол</p>
+                <p>Все права защищены</p>
+            </div>
+        </div>
+        <div class="footer__column _w500">
+            <div class="footer__menu _flex-between">
+                <div class="footer__menu-item">
+                    <h3>Продукция</h3>
+                    <ul>
+                        <li><a href="#">Чехлы на диваны</a></li>
+                        <li><a href="#">Чехлы на кресла</a></li>
+                        <li><a href="#">Чехлы на стулья</a></li>
+                        <li><a href="#">Чехлы на матрасы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h3>О компании</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Оптовым клиентам</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h3>Покупателям</h3>
+                    <ul>
+                        <li><a href="#">Обмен и возврат</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Подарочная карта</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__info">
+                <h3>+7 (495) 151-82-48</h3>
+                <p>ежедневно с 9:00-21:00</p>
+                <button class="_green">Обратный звонок</button>
+                <div class="footer__social">
+                    <p>Мы в социальных сетях</p>
+                    <div class="footer__social-links">
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="fb"></a>
+                        <a href="#" class="twit"></a>
+                        <a href="#" class="yt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__search footer__search">
+        <input type="search" placeholder="Поиск по каталогу">
+        <div class="header__search-btn">
+            <label for="header-search"></label>
+            <input type="submit" name="" id="header-search">
+        </div>
+    </div>
+</footer>
+<a href="#top" id="back_to_top"><div class="back_to_top">Наверх →</div></a>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>SMART-Чехол</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+<body class="_full">
+<div class="choose-city _darkGray">
+    <div class="wrap">
+        <div class="choose-city__title">Выберете свой город</div>
+        <div class="choose-city__search"><input type="search" placeholder="Введите название города"><input class="_pointer" type="submit" value="Выбрать"></div>
+        <div class="choose-city__list">
+            <ul class="choose-city__list-col">
+                <li><input id="moscow" type="radio" name="city">
+                <label for="moscow" class="_pointer">Москва</label></li>
+                <li> <input id="sp" type="radio" name="city">
+                <label for="sp" class="_pointer">Санкт-Петербург</label></li>
+                <li><input id="krasnodar" type="radio" name="city">
+                <label for="krasnodar" class="_pointer">Краснодар</label></li>
+                <li><input id="voronej" type="radio" name="city">
+                <label for="voronej" class="_pointer">Воронеж</label></li>
+                <li><input id="nn" type="radio" name="city">
+                <label for="nn" class="_pointer">Нижний Новгород</label></li>
+            </ul>
+            <ul class="choose-city__list-col">
+                <li><input id="kaluga" type="radio" name="city">
+                <label for="kaluga" class="_pointer">Калуга</label></li>
+                <li> <input id="rostov" type="radio" name="city">
+                <label for="rostov" class="_pointer">Ростов-на-Дону</label></li>
+                <li> <input id="tula" type="radio" name="city">
+                <label for="tula" class="_pointer">Тула</label></li>
+                <li> <input id="penza" type="radio" name="city">
+                <label for="penza" class="_pointer">Пенза</label></li>
+                <li> <input id="samara" type="radio" name="city">
+                <label for="samara" class="_pointer">Самара</label></li>
+            </ul>
+            <ul class="choose-city__list-col">
+                <li> <input id="vladimir" type="radio" name="city">
+                <label for="vladimir" class="_pointer">Владимир</label></li>
+                <li> <input id="krasnoyarsk" type="radio" name="city">
+                <label for="krasnoyarsk" class="_pointer">Красноярск</label></li>
+                <li><input id="stavropol" type="radio" name="city">
+                <label for="stavropol" class="_pointer">Ставрополь</label></li>
+                <li><input id="ekb" type="radio" name="city">
+                <label for="ekb" class="_pointer">Екатеринбург</label></li>
+                <li><input id="novosibirsk" type="radio" name="city">
+                <label for="novosibirsk" class="_pointer">Новосибирск</label></li>
+            </ul>
+        </div>
+    </div>
+    <img src="img/top-map.png" alt="">
+    <div class="choose-city__close _pointer"></div>
+</div>
+<header class="header clearfix _full">
+        <div class="top-menu _gray">
+            <div class="wrap">
+            <div class="top-menu__city">
+                <select name="city" id="city">
+                    <option value="Ростов-на-Дону">Ростов-на-дону</option>
+                    <option value="Москва">Москва</option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
+                    <option value="Владимир">Владимир</option>
+                    <option value="Воронеж">Воронеж</option>
+                </select>
+            </div>
+            <ul class="top-menu__nav _flex-around">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Обмен и возврат</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Оптовым клиентам</a></li>
+                <li><a href="#">Подарочная карта</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            </div>
+        </div>
+    <div class="wrap">
+        <div class="header__logo"><a href="../smartchehol/index.html"><img src="img/logo.png" alt=""></a></div>
+        <div class="header__info">
+            <div class="header__phones _inline _mt25">
+                <p>+7 (495) 151-82-48</p>
+                <p>+7 (495) 151-67-42</p>
+            </div>
+            <div class="header__callback _inline _mt25">
+                <button class="callback-btn _green">Заказать звонок</button>
+                <p>ежедневно с 9:00-21:00</p>
+            </div>
+            <div class="header__search _inline">
+                <input type="search" placeholder="Поиск по каталогу">
+                <div class="header__search-btn">
+                    <label for="header-search"></label>
+                    <input type="submit" name="" id="header-search">
+                </div>
+            </div>
+            <div class="header__basket _inline">
+                <a class="header__basket-procent" href="#"></a>
+                <a class="header__basket-like" href="#"></a>
+                <a class="header__basket-goods" href="#"></a>
+                <div class="header__basket-number">2</div>
+                <p>товар на 12 850 Р</p>
+            </div>
+        </div>
+        <div class="main-menu">
+            <ul class="main-menu__nav _flex-around _uppercase">
+                <li><a href="#">Чехлы для диванов</a></li>
+                <li><a href="#">Чехлы для кресел</a></li>
+                <li><a href="#">Чехлы для стульев</a></li>
+                <li><a href="#">Комплекты чехлов</a></li>
+                <li><a href="#">Товары для дома</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main class="mainpage wrap">
+    <div class="wrap">
+        <div class="mainpage__slider">
+            <ul>
+                <li><img src="img/slide.jpg" alt=""></li>
+            </ul>
+            <div class="mainpage__slider-info">
+                <h3>Подойдет любому дивану</h3>
+                <a href="#">500 наименований чехлов</a>
+                <div>
+                    <button class="_green">В каталог →</button>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage__categories _flex-between">
+            <div class="mainpage__category sofa">
+                <h3><a href="#">Чехлы на диваны</a></h3>
+                <p>от 2 999.-</p>
+                <div class="mainpage__category-goods">
+                    <a href="#">46 товаров</a>
+                </div>
+            </div>
+            <div class="mainpage__category chair">
+                <h3><a href="#">Чехлы на кресла</a></h3>
+                <p>от 800.-</p>
+                <div class="mainpage__category-goods">
+                    <a href="#">67 товаров</a>
+                </div>
+            </div>
+            <div class="mainpage__category stool">
+                <h3><a href="#">Чехлы на кресла</a></h3>
+                <p>от 1 200.-</p>
+                <div class="mainpage__category-goods">
+                    <a href="#">12 товаров</a>
+                </div>
+            </div>
+            <div class="mainpage__category matras">
+                <h3><a href="#">Чехлы на кресла</a></h3>
+                <p>от 1 999.-</p>
+                <div class="mainpage__category-goods">
+                    <a href="#">111 товаров</a>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage__catalog">
+            <div class="mainpage__catalog-nav">
+                <a class="active" href="#">Популярные товары</a>
+                <a href="#">Новинки</a>
+                <a href="#">Акции</a>
+            </div>
+            <div class="mainpage__catalog-items _flex-between">
+              <div class="mainpage__catalog-item _border">
+                  <div class="item-of-day">Товар дня</div>
+                  <img src="img/item.jpg" alt="">
+                <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                  <p>Чехол на 3-х местный диван</p>
+                  <div class="price">
+                      <div class="price-old"></div>
+                      6 800Р
+                  </div>
+                  <button class="_green">В корзину</button>
+              </div>
+                <div class="mainpage__catalog-item _border">
+                    <div class="item-hit">Хит</div>
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old">8 000 Р</div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old">9 000 Р</div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+                <div class="mainpage__catalog-item _border">
+                    <img src="img/item.jpg" alt="">
+                    <h3><a href="../smartchehol/card.html">Виста Меандр серый</a></h3>
+                    <p>Чехол на 3-х местный диван</p>
+                    <div class="price">
+                        <div class="price-old"></div>
+                        6 800Р
+                    </div>
+                    <button class="_green">В корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage__services">
+            <div class="mainpage__services-items _flex-between">
+                <div class="mainpage__services-item">
+                    <img src="img/service1.png" alt="">
+                    <h3>Гибкие скидки</h3>
+                    <p>Мы рады предложить персональные скидки для постоянных покупателей,
+                        а так же оптовые предложения для юридических лиц.</p>
+                </div>
+                <div class="mainpage__services-item">
+                    <img src="img/service2.png" alt="">
+                    <h3>Гибкие скидки</h3>
+                    <p>Мы рады предложить персональные скидки для постоянных покупателей,
+                        а так же оптовые предложения для юридических лиц.</p>
+                </div>
+                <div class="mainpage__services-item">
+                    <img src="img/service3.png" alt="">
+                    <h3>Гибкие скидки</h3>
+                    <p>Мы рады предложить персональные скидки для постоянных покупателей,
+                        а так же оптовые предложения для юридических лиц.</p>
+                </div>
+                <div class="mainpage__services-item">
+                    <img src="img/service4.png" alt="">
+                    <h3>Гибкие скидки</h3>
+                    <p>Мы рады предложить персональные скидки для постоянных покупателей,
+                        а так же оптовые предложения для юридических лиц.</p>
+                </div>
+                <div class="mainpage__services-item">
+                    <img src="img/service5.png" alt="">
+                    <h3>Гибкие скидки</h3>
+                    <p>Мы рады предложить персональные скидки для постоянных покупателей,
+                        а так же оптовые предложения для юридических лиц.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage__reviews">
+            <div class="mainpage__reviews-title">Отзывы</div>
+            <div class="mainpage__reviews-items _flex-between">
+                <div class="mainpage__reviews-item">
+                    <h3>Александр</h3>
+                    <hr>
+                    <div class="rating">
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star"></div>
+                    </div>
+                    <img src="img/review.png" alt="">
+                    <div><a href="">Виста Меандр серый</a></div>
+                    <div class="price">12 800 Р</div>
+                    <p>Покупали кровать для дачи. Нужен был максимально бюджетный вариант.
+                        Остановились на Мебелионе - тут довольно много моделей на выбор.
+                        Боялись, что за такие копейки "дрова" привезут, но кровать оказалась
+                        вполне нормальной, конечно не супер, но спать можно...</p>
+                    <div class="like _inline">12</div>
+                    <div class="dislike _inline">0</div>
+                </div>
+                <div class="mainpage__reviews-item">
+                    <h3>Александр</h3>
+                    <hr>
+                    <div class="rating">
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star"></div>
+                    </div>
+                    <img src="img/review.png" alt="">
+                    <div><a href="">Виста Меандр серый</a></div>
+                    <div class="price">12 800 Р</div>
+                    <p>Покупали кровать для дачи. Нужен был максимально бюджетный вариант.
+                        Остановились на Мебелионе - тут довольно много моделей на выбор.
+                        Боялись, что за такие копейки "дрова" привезут, но кровать оказалась
+                        вполне нормальной, конечно не супер, но спать можно...</p>
+                    <div class="like _inline">12</div>
+                    <div class="dislike _inline">0</div>
+                </div>
+                <div class="mainpage__reviews-item">
+                    <h3>Александр</h3>
+                    <hr>
+                    <div class="rating">
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star"></div>
+                    </div>
+                    <img src="img/review.png" alt="">
+                    <div><a href="">Виста Меандр серый</a></div>
+                    <div class="price">12 800 Р</div>
+                    <p>Покупали кровать для дачи. Нужен был максимально бюджетный вариант.
+                        Остановились на Мебелионе - тут довольно много моделей на выбор.
+                        Боялись, что за такие копейки "дрова" привезут, но кровать оказалась
+                        вполне нормальной, конечно не супер, но спать можно...</p>
+                    <div class="like _inline">12</div>
+                    <div class="dislike _inline">0</div>
+                </div>
+                <div class="mainpage__reviews-item">
+                    <h3>Александр</h3>
+                    <hr>
+                    <div class="rating">
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star rated"></div>
+                        <div class="star"></div>
+                    </div>
+                    <img src="img/review.png" alt="">
+                    <div><a href="">Виста Меандр серый</a></div>
+                    <div class="price">12 800 Р</div>
+                    <p>Покупали кровать для дачи. Нужен был максимально бюджетный вариант.
+                        Остановились на Мебелионе - тут довольно много моделей на выбор.
+                        Боялись, что за такие копейки "дрова" привезут, но кровать оказалась
+                        вполне нормальной, конечно не супер, но спать можно...</p>
+                    <div class="like _inline">12</div>
+                    <div class="dislike _inline">0</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainpage__about">
+            <h3>О Интернет-магазине Смарт чехол</h3>
+            <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться.
+                Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение
+                шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при
+                простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы
+                электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию,
+                так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё
+                ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много
+                версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические
+                варианты).</p>
+        </div>
+    </div>
+</main>
+<footer class="footer clearfix _full">
+    <div class="wrap _flex-between">
+        <div class="footer__column">
+            <div class="footer__logo"><a href="../smartchehol/index.html"><img src="img/footer-logo.jpg" alt=""></a></div>
+            <div class="footer__copyright">
+                <p>© 2017 Смартчехол</p>
+                <p>Все права защищены</p>
+            </div>
+        </div>
+        <div class="footer__column _w500">
+            <div class="footer__menu _flex-between">
+                <div class="footer__menu-item">
+                    <h3>Продукция</h3>
+                    <ul>
+                        <li><a href="#">Чехлы на диваны</a></li>
+                        <li><a href="#">Чехлы на кресла</a></li>
+                        <li><a href="#">Чехлы на стулья</a></li>
+                        <li><a href="#">Чехлы на матрасы</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h3>О компании</h3>
+                    <ul>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Оптовым клиентам</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu-item">
+                    <h3>Покупателям</h3>
+                    <ul>
+                        <li><a href="#">Обмен и возврат</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Как сделать заказ</a></li>
+                        <li><a href="#">Гарантия</a></li>
+                        <li><a href="#">Подарочная карта</a></li>
+                        <li><a href="#">Сертификаты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__column">
+            <div class="footer__info">
+                <h3>+7 (495) 151-82-48</h3>
+                <p>ежедневно с 9:00-21:00</p>
+                <button class="_green">Обратный звонок</button>
+                <div class="footer__social">
+                    <p>Мы в социальных сетях</p>
+                    <div class="footer__social-links">
+                        <a href="#" class="vk"></a>
+                        <a href="#" class="fb"></a>
+                        <a href="#" class="twit"></a>
+                        <a href="#" class="yt"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__search footer__search">
+        <input type="search" placeholder="Поиск по каталогу">
+        <div class="header__search-btn">
+            <label for="header-search"></label>
+            <input type="submit" name="" id="header-search">
+        </div>
+    </div>
+</footer>
+<a href="#top" id="back_to_top"><div class="back_to_top">Наверх →</div></a>
+</body>
+</html>
